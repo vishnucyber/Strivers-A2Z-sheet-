@@ -1,0 +1,131 @@
+Q1.
+896. Pattern 1
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+*****
+*****
+*****
+*****
+*****
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern1(self, n):
+        for i in range(n):
+            for j in range(n):
+                print("*",end = "")
+            print("")
+p1 = Solution()
+p1.pattern1(5)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q2.
+
+953. Pattern 2
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+
+*
+**
+***
+****
+*****
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern2(self, n):
+        for i  in range(n):
+            for j in range(i+1):
+                print("*",end = "")
+            print()
+p2 = Solution()
+p2.pattern2(4)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3.
+
+975. Pattern 3
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+1
+12
+123
+1234
+12345
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern3(self, n):
+        for i in range(1,n+1):
+            for j in range(1,i+1):
+                print(j,end = "")
+            print()
+
+p3 = Solution()
+p3.pattern3(5)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q4.
+
+984. Pattern 4
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+1
+22
+333
+4444
+55555
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern4(self, n):
+        for i in range(1,n+1):
+            for j in range(1,i+1):
+                print(i ,end = "")
+            print()
+p4 = Solution()
+p4.pattern4(5)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5.
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+*****
+****
+***
+**
+*
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern5(self, n):
+        for i in range(n,0,-1):
+            for j in range(i,0,-1):
+                print("*",end = "")
+            print()
+p5 = Solution()
+p5.pattern5(5)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q6.
+Given an integer n. You need to recreate the pattern given below for any value of N. Let's say for N = 5, the pattern should look like as below:
+12345
+1234
+123
+12
+1
+Print the pattern in the function given to you.
+
+Solution:-
+
+class Solution:
+    def pattern6(self, n):
+        for i in range(n,0,-1):
+            for j in range(1,i +1):
+                print(j,end = "")
+            print()
+
+p6 = Solution()
+p6.pattern6(4)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
